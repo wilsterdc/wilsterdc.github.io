@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-background">
-        <img src={heroBg} alt="Anime cityscape at night" />
+        <img src={heroBg} alt="Wilster Dela Cruz portfolio hero background - Tokyo skyline artwork" />
         <div className="hero-overlay" />
       </div>
 

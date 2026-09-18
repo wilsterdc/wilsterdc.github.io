@@ -43,7 +43,7 @@ export default function Contact() {
           viewport={{ once: true, margin: '-50px' }}
         >
           <div className="contact-bg-wrapper">
-            <img src={contactBg} alt="Anime sunset city" className="contact-bg-img" />
+            <img src={contactBg} alt="Wilster Dela Cruz portfolio contact background - Tokyo cityscape" className="contact-bg-img" />
             <div className="contact-overlay" />
           </div>
 
@@ -131,9 +131,14 @@ export default function Contact() {
                   <FiLinkedin />
                 </a>
                 <a
-                  href={`mailto:${personalInfo.email}`}
-                  aria-label="Email"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = `mailto:${personalInfo.email}`;
+                  }}
+                  aria-label="Email Wilster Dela Cruz"
                   className="contact-social-link"
+                  data-nosnippet="true"
                 >
                   <FiMail />
                 </a>

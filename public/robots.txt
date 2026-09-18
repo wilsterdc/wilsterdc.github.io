@@ -1,0 +1,139 @@
+# ==============================================================================
+# ROBOTS.TXT — Wilster Dela Cruz Portfolio (https://wilsterdc.github.io)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. ALLOW SEARCH ENGINES (FOR DISCOVERY & SEARCH RANKING)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 2. BLOCK AI TRAINING SCRAPERS & LLM DATA HARVESTERS
+# ------------------------------------------------------------------------------
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Google AI Training Scraper (separate from Googlebot search indexer)
+User-agent: Google-Extended
+Disallow: /
+
+# Common Crawl (Massive AI dataset harvester)
+User-agent: CCBot
+Disallow: /
+
+# ByteDance / TikTok AI Scraper
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Byteq
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# Meta / Facebook AI Crawlers
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# Amazon AI / Web Scraper
+User-agent: Amazonbot
+Disallow: /
+
+# Other Prominent AI & Data Harvesters
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: VelenPublicWebCrawler
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+# ------------------------------------------------------------------------------
+# 3. BLOCK COMMERCIAL SCRAPERS & AGGRESSIVE BOT CRAWLERS
+# ------------------------------------------------------------------------------
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ------------------------------------------------------------------------------
+# 4. DEFAULT RULES FOR ALL OTHER CRAWLERS
+# ------------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Crawl-delay: 10
+
+# ------------------------------------------------------------------------------
+# 5. SITEMAP LOCATION
+# ------------------------------------------------------------------------------
+Sitemap: https://wilsterdc.github.io/sitemap.xml

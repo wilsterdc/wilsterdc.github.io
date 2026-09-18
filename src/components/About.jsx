@@ -40,8 +40,17 @@ export default function About() {
               <div className="about-info-item">
                 <HiMail className="about-info-icon" />
                 <span className="about-info-label">Email</span>
-                <span className="about-info-value">
-                  <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
+                <span className="about-info-value" data-nosnippet="true">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href = `mailto:${personalInfo.email}`;
+                    }}
+                    aria-label="Send email to Wilster Dela Cruz"
+                  >
+                    {personalInfo.email}
+                  </a>
                 </span>
               </div>
               <div className="about-info-item">
@@ -59,7 +68,7 @@ export default function About() {
           <div className="about-right">
             <img
               src={aboutCharacter}
-              alt="Wilster Dela Cruz"
+              alt="Wilster Dela Cruz - Backend and Full-Stack Developer"
               className="about-character-img"
             />
             <div className="about-image-overlay" />
