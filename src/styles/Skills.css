@@ -1,0 +1,109 @@
+/* =============================================
+   SKILLS
+   ============================================= */
+
+.skills {
+  background-color: var(--bg-primary);
+}
+
+.skills-grid-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-3xl);
+}
+
+.skills-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.skill-category {
+  padding: var(--space-xl);
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.skill-category:hover {
+  border-color: rgba(56, 189, 248, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.skill-category-icon {
+  color: var(--accent-cyan);
+  font-size: 1.35rem;
+}
+
+.skill-category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-item {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color var(--transition-fast);
+}
+
+.skill-item:hover {
+  color: var(--accent-cyan);
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .skills-grid-top,
+  .skills-grid-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .skills-grid-top {
+    margin-top: var(--space-xl);
+  }
+
+  .skills-grid-bottom {
+    margin-top: var(--space-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid-top,
+  .skills-grid-bottom {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .skills-grid-top {
+    margin-top: var(--space-xl);
+  }
+
+  .skills-grid-bottom {
+    margin-top: var(--space-md);
+  }
+
+  .skill-category {
+    padding: 1.25rem;
+  }
+
+  .skill-category-header {
+    margin-bottom: var(--space-md);
+  }
+}
